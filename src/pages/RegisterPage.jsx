@@ -5,14 +5,16 @@ import { checkCode } from "../helpers/checkCode";
 import { getQrImage } from "../helpers/getQrImage";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const initialForm = {
   name: "",
   code: "",
-  hasEnter: false
+  hasEnter: false,
 };
 
 export const RegisterPage = () => {
+
   const navigate = useNavigate();
   const { name, code, hasEnter, onInputChange } = useForm(initialForm);
 
@@ -33,7 +35,7 @@ export const RegisterPage = () => {
       const userToFirestore = {
         name,
         imgUrl,
-        hasEnter
+        hasEnter,
       };
       const userRef = doc(firebaseDB, `codes/${code}/`);
       await setDoc(userRef, userToFirestore, { merge: true });
@@ -47,7 +49,7 @@ export const RegisterPage = () => {
         <div className="form-container">
           <div className="logo-container">
             <img
-              src="./assets/img/logo.jpeg"
+              src="./assets/logo.5bdb58ad.jpeg"
               alt="logo_Demo"
               className="logo"
             />

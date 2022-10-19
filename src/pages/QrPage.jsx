@@ -1,9 +1,10 @@
 import { doc, setDoc } from "firebase/firestore/lite";
+import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { firebaseDB } from "../firebase/config";
 
 export const QrPage = ({ user }) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const { name, imgUrl, hasEnter } = user;
   const { code } = useParams();
 
@@ -25,9 +26,9 @@ export const QrPage = ({ user }) => {
       <div className="title-container">
         <h1>
           {name}
-          {!hasEnter&& ", en la entrada te pedirán este código para darte acceso al evento"}
+          {!hasEnter &&
+            ", en la entrada te pedirán este código para darte acceso al evento"}
           <br />
-          
         </h1>
       </div>
       {hasEnter ? (
