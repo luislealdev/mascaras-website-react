@@ -47,7 +47,7 @@ export const RegisterPage = () => {
         <div className="form-container">
           <div className="logo-container">
             <img
-              src="/assets/img/logo.jpeg"
+              src="./assets/img/logo.jpeg"
               alt="logo_Demo"
               className="logo"
             />
