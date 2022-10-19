@@ -21,7 +21,7 @@ export const QrPage = ({ user }) => {
   return (
     <div className="main-container">
       <div className="logo-container">
-        <img src="src/assets/img/logo.jpeg" alt="logo_Demo" className="logo" />
+        <img src="./assets/logo.5bdb58ad.jpeg" alt="logo_Demo" className="logo" />
       </div>
       <div className="title-container">
         <h1>
