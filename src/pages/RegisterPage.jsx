@@ -84,8 +84,8 @@ export const RegisterPage = () => {
           </form>
         </div>
         <footer className="credits">
-          <h2>Universidad Anahuac Querétaro</h2>
-          <p>Taller de carpetas comercialess</p>
+          <h2>Universidad Anáhuac Querétaro</h2>
+          <p>Taller de carpetas comerciales</p>
           <p>25 de Noviembre de 2022 - 19:00pm</p>
           <p>Auditorio - Edificio B</p>
         </footer>
